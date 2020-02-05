@@ -1,0 +1,14 @@
+Left
+Right
+Split
+Alternating
+Flaxen
+Black
+Brown
+Gray
+Multicolor
+Red
+White
+Body:Same
+Body:Lighter
+Body:Darker
