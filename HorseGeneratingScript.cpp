@@ -195,6 +195,9 @@ int main()
 		
 		random = rand() % myManes.size();
 		myfile << "\t\"Mane\": \"" << myManes.at(random) << "\",\n";
+
+		random = rand() % myFaces.size();
+		myfile << "\t\"Face\": \"" << myFaces.at(random) << "\",\n";
 		
 		random = rand() % myWhorls.size();
 		myfile << "\t\"Whorl\": \"" << myWhorls.at(random) << "\",\n";
