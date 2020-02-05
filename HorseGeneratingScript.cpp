@@ -172,7 +172,7 @@ int main()
 	int random;
 
 	//Beginning of JSON 
-	myfile << "{\"horses\":[";
+	myfile << "[";
 	//Body of JSON
 	for (int i = 0; i < numHorses; i++)
 	{
@@ -188,7 +188,7 @@ int main()
 		myfile << "\t\"Image\": \"" << myImagePaths.at(random) << "\",\n";
 
 		random = rand() % BANDSIZE;
-		myfile << "\t\"Band\": \"" << random << "\",\n";
+		myfile << "\t\"Band\": " << random << ",\n";
 		
 		random = rand() % myColors.size();
 		myfile << "\t\"Color\": \"" << myColors.at(random) << "\",\n";
@@ -226,7 +226,7 @@ int main()
 		if (i + 1 < numHorses)
 			myfile << ", ";
 	}
-	myfile << "]}";
+	myfile << "]";
 	myfile.close();
 
 	stopTime = high_resolution_clock::now();
